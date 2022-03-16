@@ -20,8 +20,16 @@
         </p>
       </div>
 
-
-
+<h1>Site settings</h1>
+{{ settings.site_settings.SocialMediaSettings.facebook }}
+{{ settings.site_settings.SocialMediaSettings.twitter }}
+{{ settings.site_settings.SocialMediaSettings.youtube }}
+<p>
+  
+{{ settings.site_settings.SocialMediaSettings.facebook }}
+{{ settings.site_settings.SocialMediaSettings.twitter }}
+{{ settings.site_settings.SocialMediaSettings.youtube }}
+</p>
 {% for block in page.content %}
       {% include_block block %}
 

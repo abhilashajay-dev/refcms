@@ -26,9 +26,16 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
+    'flex',
+    'streams',
+    'site_settings',
+    'subscribers',
+    'blog',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
+    'wagtail.contrib.settings',
+    'wagtail.contrib.modeladmin',
     'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',
@@ -53,13 +60,8 @@ INSTALLED_APPS = [
     'wagtailcodeblock',
     'wagtailfontawesome',
     'wagtail_blocks',
-
     
-
-
-    'blog',
-    'flex',
-    'streams',
+    
 
 
    
@@ -92,6 +94,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'wagtail.contrib.settings.context_processors.settings',
             ],
         },
     },
